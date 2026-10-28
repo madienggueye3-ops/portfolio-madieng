@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio officiel de Madieng GUEYE, Développeur Web & Mobile basé au Sénégal. Création de sites web modernes, applications et plateformes numériques sur mesure.">
+    <meta name="author" content="Madieng GUEYE">
+    <meta name="keywords" content="Madieng GUEYE, Développeur Web, Développeur Mobile, Sénégal, Dakar, Portfolio, PHP, JavaScript, Bootstrap, WordPress, solutions numériques">
+    <title>Madieng GUEYE | Développeur Web & Mobile</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="alternate icon" type="image/png" href="images/profile.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem("mg_portfolio_theme");
+            if (savedTheme === "dark") {
+                document.documentElement.setAttribute("data-theme", "dark");
+            } else {
+                document.documentElement.removeAttribute("data-theme");
+            }
+        })();
+    </script>
+</head>
+
+<body>
+
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <span class="loader-monogram">MG</span>
+            <div class="loader-bar"><div class="loader-fill"></div></div>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+            <div class="container">
+                <a class="navbar-brand" href="#accueil" aria-label="Accueil Madieng GUEYE">
+                    <span class="brand-monogram">MG</span>
+                    <span class="brand-name">Madieng GUEYE</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Basculer le menu">
+                    <span class="toggler-bar"></span>
+                    <span class="toggler-bar"></span>
+                    <span class="toggler-bar"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                        <li class="nav-item"><a class="nav-link active" href="#accueil">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#apropos">À propos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#parcours">Parcours</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#competences">Compétences</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projets">Projets</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item ms-lg-2">
+                            <a class="btn-cv" href="cv/cv.html" target="_blank" aria-label="Consulter et télécharger le CV de Madieng GUEYE">
+                                <i class="bi bi-file-earmark-person"></i>
+                                <span>Mon CV</span>
+                             </a>
+                        </li>
+                        <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                            <button type="button" class="theme-toggle-btn" id="themeToggle" aria-label="Basculer entre mode sombre et clair" title="Changer le thème">
+                                <i class="bi bi-moon-stars-fill theme-icon-dark"></i>
+                                <i class="bi bi-sun-fill theme-icon-light"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="accueil" class="hero-section">
+            <div class="hero-bg-shapes">
+                <div class="hero-shape hero-shape-1"></div>
+                <div class="hero-shape hero-shape-2"></div>
+                <div class="hero-shape hero-shape-3"></div>
+            </div>
+
+            <div class="container">
+                <div class="row align-items-center hero-row g-5">
+
+                    <div class="col-lg-7 hero-col-text">
+
+                        <div class="status-badge">
+                            <span class="status-pulse"></span>
+                            <span class="status-text">Disponible pour de nouveaux projets</span>
+                        </div>
+
+                        <p class="hero-greeting">Bonjour, je suis</p>
+
+                        <h1 class="hero-title">
+                            <span class="hero-name">Madieng GUEYE</span>
+                        </h1>
+
+                        <div class="hero-role-wrapper">
+                            <span class="role-accent-bar"></span>
+                            <h2 class="hero-role">
+                                <span class="typing-text">Développeur Web & Mobile</span>
+                            </h2>
+                        </div>
+
+                        <p class="hero-description">
+                            Je transforme des idées en solutions web <strong>modernes</strong>, performantes et adaptées aux besoins réels des utilisateurs. Basé au Sénégal, disponible partout.
+                        </p>
+
+                        <div class="hero-actions">
+                            <a href="#projets" class="btn-primary-custom">
+                                <span>Découvrir mes projets</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                            <a href="#contact" class="btn-outline-custom">
+                                <i class="bi bi-chat-dots"></i>
+                                <span>Me contacter</span>
+                            </a>
+                        </div>
+
+                        <div class="hero-meta">
+                            <div class="hero-socials">
+                                <a href="https://github.com/madienggueye3-ops" target="_blank" rel="noopener noreferrer" aria-label="Profil GitHub de Madieng GUEYE" class="social-icon" title="GitHub">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Profil LinkedIn de Madieng GUEYE" class="social-icon" title="LinkedIn">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                                <a href="https://wa.me/221782705824" target="_blank" rel="noopener noreferrer" aria-label="Contacter Madieng GUEYE sur WhatsApp" class="social-icon social-icon-wa" title="WhatsApp">
+                                    <i class="bi bi-whatsapp"></i>
+                                </a>
+                            </div>
+                            <div class="hero-location">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                <span>Sénégal 🇸🇳</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-5 hero-col-visual">
+                        <div class="profile-showcase">
+
+                            <div class="profile-card">
+                                <div class="profile-ring"></div>
+                                <div class="profile-image-container">
+                                    <img src="images/profile.jpg" alt="Portrait de Madieng GUEYE — Développeur Web & Mobile" class="profile-img" loading="eager">
+                                </div>
+                                <div class="profile-online-dot" title="Disponible"></div>
+                            </div>
+
+                            <div class="floating-badge badge-html" title="HTML5">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="18" height="18">
+                                <span>HTML</span>
+                            </div>
+
+                            <div class="floating-badge badge-css" title="CSS3">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="18" height="18">
+                                <span>CSS</span>
+                            </div>
+
+                            <div class="floating-badge badge-js" title="JavaScript">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="18" height="18">
+                                <span>JavaScript</span>
+                            </div>
+
+                            <div class="floating-badge badge-php" title="PHP">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" width="18" height="18">
+                                <span>PHP</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <a href="#apropos" class="hero-scroll-btn" aria-label="Défiler vers la section À propos">
+                <span class="scroll-btn-text">Découvrir</span>
+                <i class="bi bi-chevron-down"></i>
+            </a>
+        </section>
+
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-container">
+                    <div class="row g-0 text-center">
+
+                        <div class="col-6 col-md-3 stat-col">
+                            <div class="stat-card">
+                                <div class="stat-icon"><i class="bi bi-stars"></i></div>
+                                <span class="stat-num">7+</span>
+                                <span class="stat-desc">Projets réalisés</span>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-3 stat-col">
+                            <div class="stat-card">
+                                <div class="stat-icon"><i class="bi bi-code-slash"></i></div>
+                                <span class="stat-num stat-blue">WEB</span>
+                                <span class="stat-desc">Développement & création</span>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-3 stat-col">
+                            <div class="stat-card">
+                                <div class="stat-icon"><i class="bi bi-phone"></i></div>
+                                <span class="stat-num stat-blue">MOBILE</span>
+                                <span class="stat-desc">Solutions numériques</span>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-3 stat-col">
+                            <div class="stat-card">
+                                <div class="stat-icon"><i class="bi bi-calendar-check"></i></div>
+                                <span class="stat-num">2021</span>
+                                <span class="stat-desc">Début du parcours</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="apropos" class="section-padding about-section">
+            <div class="container">
+
+                <div class="section-header">
+                    <div class="section-tag">
+                        <span class="tag-dot"></span>
+                        <span class="tag-label">À propos de moi</span>
+                    </div>
+                    <h2 class="section-title">Construire, <span>apprendre</span> et évoluer.</h2>
+                </div>
+
+                <div class="row g-5 align-items-center">
+
+                    <div class="col-lg-5">
+                        <div class="about-card-banner">
+                            <div class="banner-icon-wrap">
+                                <i class="bi bi-code-slash"></i>
+                            </div>
+                            <h3 class="banner-heading">Développeur Web & Mobile<br><span>passionné & créatif</span></h3>
+                            <p class="banner-text">
+                                Je m'intéresse particulièrement au développement web, aux technologies modernes et à la conception d'outils digitaux performants et utiles au quotidien.
+                            </p>
+                            <div class="about-chips">
+                                <span class="about-chip"><i class="bi bi-geo-alt"></i> Sénégal</span>
+                                <span class="about-chip"><i class="bi bi-calendar3"></i> Depuis 2021</span>
+                                <span class="about-chip"><i class="bi bi-check-circle"></i> Disponible</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="about-main-text">
+                            <p class="about-lead">
+                                Je suis <strong>Madieng GUEYE</strong>, développeur Web & Mobile passionné par la création de solutions numériques modernes et performantes.
+                            </p>
+                            <p class="about-paragraph">
+                                Mon parcours numérique a débuté en 2021 et s'est progressivement orienté vers le développement web, le développement mobile et la conception de projets logiciels complets répondant à des besoins concrets.
+                            </p>
+                            <p class="about-paragraph">
+                                Aujourd'hui, je continue à apprendre, expérimenter et créer des projets afin de transformer des idées en solutions fiables, modernes et adaptées à chaque utilisateur.
+                            </p>
+
+                            <div class="about-pillars">
+                                <div class="pillar-item">
+                                    <div class="pillar-icon"><i class="bi bi-browser-safari"></i></div>
+                                    <div class="pillar-content">
+                                        <h4>Développement Web</h4>
+                                        <p>Applications dynamiques, interfaces fluides & ergonomiques.</p>
+                                    </div>
+                                </div>
+
+                                <div class="pillar-item">
+                                    <div class="pillar-icon"><i class="bi bi-phone"></i></div>
+                                    <div class="pillar-content">
+                                        <h4>Développement Mobile</h4>
+                                        <p>Conception d'outils mobiles intuitifs et réactifs.</p>
+                                    </div>
+                                </div>
+
+                                <div class="pillar-item">
+                                    <div class="pillar-icon"><i class="bi bi-aspect-ratio"></i></div>
+                                    <div class="pillar-content">
+                                        <h4>Design Responsive</h4>
+                                        <p>Affichage harmonieux sur tous les écrans.</p>
+                                    </div>
+                                </div>
+
+                                <div class="pillar-item">
+                                    <div class="pillar-icon"><i class="bi bi-camera-video"></i></div>
+                                    <div class="pillar-content">
+                                        <h4>Audiovisuel</h4>
+                                        <p>Production vidéo, montage et contenus multimédia.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="parcours" class="section-padding parcours-section">
+            <div class="container">
+
+                <div class="section-header">
+                    <div class="section-tag">
+                        <span class="tag-dot"></span>
+                        <span class="tag-label">Mon parcours</span>
+                    </div>
+                    <h2 class="section-title">Parcours <span>numérique & professionnel.</span></h2>
+                </div>
+
+                <div class="timeline-wrapper">
+
+                    <div class="timeline-step">
+                        <div class="timeline-bullet"><i class="bi bi-phone"></i></div>
+                        <div class="timeline-date-badge">Sept. 2021</div>
+                        <div class="timeline-card">
+                            <span class="timeline-category">Formation numérique</span>
+                            <h3 class="timeline-title">Formation Expresso — M-JANGAL & JOKKOLABS</h3>
+                            <p class="timeline-desc">
+                                Formation réalisée en collaboration avec <strong>M-JANGAL</strong> et <strong>HUB-NORD BY JOKKOLABS</strong>, avec découverte approfondie de <strong>MIT App Inventor</strong> pour la conception d'applications mobiles.
+                            </p>
+                            <div class="timeline-chips">
+                                <span>Expresso</span><span>M-JANGAL</span><span>JOKKOLABS</span><span>MIT App Inventor</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-step">
+                        <div class="timeline-bullet"><i class="bi bi-file-earmark-text"></i></div>
+                        <div class="timeline-date-badge">Formation certifiante</div>
+                        <div class="timeline-card">
+                            <span class="timeline-category">Informatique fondamentale</span>
+                            <h3 class="timeline-title">Formation en bureautique</h3>
+                            <p class="timeline-desc">
+                                Maîtrise des outils bureautiques et bases de l'environnement informatique avec obtention d'une <strong>attestation de formation</strong>.
+                            </p>
+                            <div class="timeline-chips">
+                                <span>Bureautique</span><span>Informatique</span><span>Attestation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-step">
+                        <div class="timeline-bullet"><i class="bi bi-laptop"></i></div>
+                        <div class="timeline-date-badge">3 mois</div>
+                        <div class="timeline-card">
+                            <span class="timeline-category">Centre de compétences</span>
+                            <h3 class="timeline-title">Centre de Recherche et d'Essai de Bango</h3>
+                            <p class="timeline-desc">
+                                Formation technique suivie au Centre de Recherche et d'Essai de Bango pendant trois mois, renforçant les acquis en informatique appliquée et méthodologies.
+                            </p>
+                            <div class="timeline-chips">
+                                <span>3 mois</span><span>Bango</span><span>Recherche & Essai</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-step">
+                        <div class="timeline-bullet"><i class="bi bi-code-square"></i></div>
+                        <div class="timeline-date-badge">En cours</div>
+                        <div class="timeline-card">
+                            <span class="timeline-category">Développement actif</span>
+                            <h3 class="timeline-title">Développement Web & Mobile</h3>
+                            <p class="timeline-desc">
+                                Conception et développement de projets personnels dans différents domaines : éducation, commerce, restauration, agriculture, sport et gestion commerciale.
+                            </p>
+                            <div class="timeline-chips">
+                                <span>Web</span><span>Mobile</span><span>PHP</span><span>JavaScript</span><span>WordPress</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-step">
+                        <div class="timeline-bullet highlight"><i class="bi bi-rocket-takeoff"></i></div>
+                        <div class="timeline-date-badge">2026</div>
+                        <div class="timeline-card featured-timeline-card">
+                            <span class="timeline-category">Réalisations concrètes</span>
+                            <h3 class="timeline-title">Création de projets numériques personnels</h3>
+                            <p class="timeline-desc">
+                                Conception, architecture et publication de plateformes web complètes : <strong>EDUSEN</strong>, <strong>Sengestion</strong>, <strong>Restaurant Délice</strong>, <strong>MBAY-MI</strong> et <strong>FALT</strong>.
+                            </p>
+                            <div class="timeline-chips">
+                                <span>EDUSEN</span><span>Sengestion</span><span>MBAY-MI</span><span>FALT</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="competences" class="section-padding skills-section">
+            <div class="container">
+
+                <div class="section-header">
+                    <div class="section-tag">
+                        <span class="tag-dot"></span>
+                        <span class="tag-label">Mes compétences</span>
+                    </div>
+                    <h2 class="section-title">Des compétences <span>au service des idées.</span></h2>
+                </div>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+                        <div class="skill-top">
+                            <div class="skill-icon-box">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="skill-logo-img">
+                            </div>
+                            <span class="skill-num">01</span>
+                        </div>
+                        <h3 class="skill-name">HTML5</h3>
+                        <p class="skill-description">Création de structures web modernes, sémantiques et accessibles.</p>
+                        <div class="skill-bar"><span class="skill-fill" style="width:95%"></span></div>
+                        <span class="skill-level">Avancé</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-top">
+                            <div class="skill-icon-box">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="skill-logo-img">
+                            </div>
+                            <span class="skill-num">02</span>
+                        </div>
+                        <h3 class="skill-name">CSS3</h3>
+                        <p class="skill-description">Interfaces modernes, animations fluides et typographie soignée.</p>
+                        <div class="skill-bar"><span class="skill-fill" style="width:90%"></span></div>
+                        <span class="skill-level">Avancé</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-top">
+                            <div class="skill-icon-box">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" class="skill-logo-img">
+                            </div>
+                            <span class="skill-num">03</span>
+                        </div>
+                        <h3 class="skill-name">Bootstrap</h3>
+                        <p class="skill-description">Création rapide d'interfaces responsives et professionnelles.</p>
+                        <div class="skill-bar"><span class="skill-fill" style="width:92%"></span></div>
+                        <span class="skill-level">Avancé</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-top">
+                            <div class="skill-icon-box">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-logo-img">
+                            </div>
+                            <span class="skill-num">04</span>
+                        </div>
+                        <h3 class="skill-name">JavaScript</h3>
+                        <p class="skill-description">Interactions dynamiques, DOM et logique métier côté client.</p>
+                        <div class="skill-bar"><span class="skill-fill" style="width:85%"></span></div>
+                        <span class="skill-level">Intermédiaire+</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-top">
+                            <div class="skill-icon-box">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="skill-logo-img">
+                            </div>
+                            <span class="skill-num">05</span>
+                        </div>
+                        <h3 class="skill-name">PHP</h3>
+                        <p class="skill-description">Développement backend robuste, formulaires et API web.</p>
+                        <div class="skill-bar"><span class="skill-fill" style="width:80%"></span></div>
+                        <span class="skill-level">Intermédiaire</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-top">
+                            <div class="skill-icon-box">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="skill-logo-img">
+                            </div>
+                            <span class="skill-num">06</span>
+                        </div>
+                        <h3 class="skill-name">MySQL</h3>
+                        <p class="skill-description">Modélisation relationnelle, requêtes SQL et gestion des bases.</p>
+                        <div class="skill-bar"><span class="skill-fill" style="width:78%"></span></div>
+                        <span class="skill-level">Intermédiaire</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-top">
+                            <div class="skill-icon-box">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" alt="WordPress" class="skill-logo-img">
+                            </div>
+                            <span class="skill-num">07</span>
+                        </div>
+                        <h3 class="skill-name">WordPress</h3>
+                        <p class="skill-description">Création, personnalisation de thèmes et administration de sites.</p>
+                        <div class="skill-bar"><span class="skill-fill" style="width:88%"></span></div>
+                        <span class="skill-level">Avancé</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-top">
+                            <div class="skill-icon-box">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="skill-logo-img">
+                            </div>
+                            <span class="skill-num">08</span>
+                        </div>
+                        <h3 class="skill-name">Git & GitHub</h3>
+                        <p class="skill-description">Gestion de versions, travail collaboratif et déploiement.</p>
+                        <div class="skill-bar"><span class="skill-fill" style="width:86%"></span></div>
+                        <span class="skill-level">Avancé</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-top">
+                            <div class="skill-icon-box skill-icon-responsive">
+                                <i class="bi bi-phone-flip"></i>
+                            </div>
+                            <span class="skill-num">09</span>
+                        </div>
+                        <h3 class="skill-name">Responsive Design</h3>
+                        <p class="skill-description">Adaptation fluide aux écrans mobiles, tablettes et moniteurs.</p>
+                        <div class="skill-bar"><span class="skill-fill" style="width:95%"></span></div>
+                        <span class="skill-level">Avancé</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="projets" class="section-padding projects-section">
+            <div class="container">
+
+                <div class="section-header d-md-flex justify-content-between align-items-end">
+                    <div>
+                        <div class="section-tag">
+                            <span class="tag-dot"></span>
+                            <span class="tag-label">Mes réalisations</span>
+                        </div>
+                        <h2 class="section-title">Des projets <span>concrets.</span></h2>
+                    </div>
+
+                    <div class="project-filter-tabs mt-4 mt-md-0" role="tablist">
+                        <button class="filter-tab active" data-filter="all">Tous</button>
+                        <button class="filter-tab" data-filter="web">Web & SaaS</button>
+                        <button class="filter-tab" data-filter="wordpress">WordPress</button>
+                        <button class="filter-tab" data-filter="plateforme">Plateformes</button>
+                    </div>
+                </div>
+
+                <div class="projects-grid">
+
+                    <article class="project-item" data-category="wordpress">
+                        <div class="project-card-clean">
+                            <div class="project-image-box">
+                                <img src="images/projet-edusen.jpg" alt="Aperçu du projet EDUSEN" class="project-img" loading="lazy">
+                                <div class="project-overlay">
+                                    <a href="#contact" class="project-overlay-btn">Voir le projet <i class="bi bi-arrow-up-right"></i></a>
+                                </div>
+                                <div class="project-category-badge">Éducation / WordPress</div>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-topline">
+                                    <span class="project-year-badge">2026</span>
+                                    <h3 class="project-title">EDUSEN</h3>
+                                </div>
+                                <p class="project-description">Plateforme dédiée aux étudiants permettant de centraliser des ressources pédagogiques, cours en ligne et services utiles.</p>
+                                <div class="project-tech-tags">
+                                    <span>WordPress</span><span>Web</span><span>Éducation</span>
+                                </div>
+                                <div class="project-link-row">
+                                    <a href="#contact" class="btn-project-view"><span>Voir le projet</span><i class="bi bi-arrow-up-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-item" data-category="web">
+                        <div class="project-card-clean">
+                            <div class="project-image-box">
+                                <img src="images/projet-sengestion.jpg" alt="Aperçu du projet SaaS Sengestion" class="project-img" loading="lazy">
+                                <div class="project-overlay">
+                                    <a href="#contact" class="project-overlay-btn">Voir le projet <i class="bi bi-arrow-up-right"></i></a>
+                                </div>
+                                <div class="project-category-badge">SaaS / Gestion</div>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-topline">
+                                    <span class="project-year-badge">2026</span>
+                                    <h3 class="project-title">SENGESTION</h3>
+                                </div>
+                                <p class="project-description">Solution numérique pensée pour accompagner les vendeurs dans la gestion de leur activité commerciale, stocks et encaissements.</p>
+                                <div class="project-tech-tags">
+                                    <span>SaaS</span><span>Gestion</span><span>Web</span>
+                                </div>
+                                <div class="project-link-row">
+                                    <a href="#contact" class="btn-project-view"><span>Voir le projet</span><i class="bi bi-arrow-up-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-item" data-category="web">
+                        <div class="project-card-clean">
+                            <div class="project-image-box">
+                                <img src="images/projet-restaurant.jpg" alt="Aperçu du site Restaurant Délice" class="project-img" loading="lazy">
+                                <div class="project-overlay">
+                                    <a href="https://madienggueye3-ops.github.io/restaurant/" target="_blank" rel="noopener noreferrer" class="project-overlay-btn">Voir le projet <i class="bi bi-arrow-up-right"></i></a>
+                                </div>
+                                <div class="project-category-badge">Site Web</div>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-topline">
+                                    <span class="project-year-badge">2026</span>
+                                    <h3 class="project-title">RESTAURANT DÉLICE</h3>
+                                </div>
+                                <p class="project-description">Site web responsive pour un restaurant avec menu gastronomique, galerie interactive, module de réservation et contact.</p>
+                                <div class="project-tech-tags">
+                                    <span>HTML</span><span>CSS</span><span>Bootstrap</span>
+                                </div>
+                                <div class="project-link-row">
+                                    <a href="https://madienggueye3-ops.github.io/restaurant/" target="_blank" rel="noopener noreferrer" class="btn-project-view"><span>Voir le projet</span><i class="bi bi-arrow-up-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-item" data-category="plateforme">
+                        <div class="project-card-clean">
+                            <div class="project-image-box">
+                                <img src="images/projet-asc-diagambal.jpg" alt="Aperçu du site ASC DIAGAMBAL" class="project-img" loading="lazy">
+                                <div class="project-overlay">
+                                    <a href="#contact" class="project-overlay-btn">Voir le projet <i class="bi bi-arrow-up-right"></i></a>
+                                </div>
+                                <div class="project-category-badge">Sport</div>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-topline">
+                                    <span class="project-year-badge">2026</span>
+                                    <h3 class="project-title">ASC DIAGAMBAL</h3>
+                                </div>
+                                <p class="project-description">Site web dynamique dédié à une équipe sportive avec présentation des effectifs, calendrier des matchs et actualités.</p>
+                                <div class="project-tech-tags">
+                                    <span>Bootstrap</span><span>PHP</span><span>JavaScript</span>
+                                </div>
+                                <div class="project-link-row">
+                                    <a href="#contact" class="btn-project-view"><span>Voir le projet</span><i class="bi bi-arrow-up-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-item" data-category="plateforme">
+                        <div class="project-card-clean">
+                            <div class="project-image-box">
+                                <img src="images/projet-falt.jpg" alt="Aperçu de la plateforme FALT" class="project-img" loading="lazy">
+                                <div class="project-overlay">
+                                    <a href="https://madienggueye3-ops.github.io/falt/" target="_blank" rel="noopener noreferrer" class="project-overlay-btn">Voir le projet <i class="bi bi-arrow-up-right"></i></a>
+                                </div>
+                                <div class="project-category-badge">Plateforme</div>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-topline">
+                                    <span class="project-year-badge">Projet</span>
+                                    <h3 class="project-title">FALT</h3>
+                                </div>
+                                <p class="project-description">Plateforme associative comprenant espace d'adhésion en ligne, cotisations, suivi d'activités et communication membre.</p>
+                                <div class="project-tech-tags">
+                                    <span>PHP</span><span>Bootstrap</span><span>MySQL</span>
+                                </div>
+                                <div class="project-link-row">
+                                    <a href="https://madienggueye3-ops.github.io/falt/" target="_blank" rel="noopener noreferrer" class="btn-project-view"><span>Voir le projet</span><i class="bi bi-arrow-up-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-item" data-category="web">
+                        <div class="project-card-clean">
+                            <div class="project-image-box">
+                                <img src="images/projet-mbay-mi.jpg" alt="Aperçu du projet MBAY-MI" class="project-img" loading="lazy">
+                                <div class="project-overlay">
+                                    <a href="https://madienggueye3-ops.github.io/Produits-Agricole/" target="_blank" rel="noopener noreferrer" class="project-overlay-btn">Voir le projet <i class="bi bi-arrow-up-right"></i></a>
+                                </div>
+                                <div class="project-category-badge">Agriculture</div>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-topline">
+                                    <span class="project-year-badge">Projet</span>
+                                    <h3 class="project-title">MBAY-MI</h3>
+                                </div>
+                                <p class="project-description">Projet numérique facilitant la mise en relation directe entre producteurs agricoles, commerçants et consommateurs finaux.</p>
+                                <div class="project-tech-tags">
+                                    <span>Web</span><span>Commerce</span><span>Agriculture</span>
+                                </div>
+                                <div class="project-link-row">
+                                    <a href="https://madienggueye3-ops.github.io/Produits-Agricole/" target="_blank" rel="noopener noreferrer" class="btn-project-view"><span>Voir le projet</span><i class="bi bi-arrow-up-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-item" data-category="web">
+                        <div class="project-card-clean">
+                            <div class="project-image-box">
+                                <img src="images/projet-portfolio.jpg" alt="Aperçu du Portfolio de Madieng GUEYE" class="project-img" loading="lazy">
+                                <div class="project-overlay">
+                                    <a href="#accueil" class="project-overlay-btn">Voir le projet <i class="bi bi-arrow-up-right"></i></a>
+                                </div>
+                                <div class="project-category-badge">Portfolio</div>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-topline">
+                                    <span class="project-year-badge">2026</span>
+                                    <h3 class="project-title">MON PORTFOLIO</h3>
+                                </div>
+                                <p class="project-description">Portfolio personnel haut de gamme conçu pour présenter mon identité, mes compétences et mes créations numériques.</p>
+                                <div class="project-tech-tags">
+                                    <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                                </div>
+                                <div class="project-link-row">
+                                    <a href="#accueil" class="btn-project-view"><span>Voir le projet</span><i class="bi bi-arrow-up-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="services" class="section-padding services-section">
+            <div class="container">
+
+                <div class="section-header text-center mx-auto" style="max-width:680px">
+                    <div class="section-tag justify-content-center">
+                        <span class="tag-dot"></span>
+                        <span class="tag-label">Mes services</span>
+                    </div>
+                    <h2 class="section-title">Ce que je peux <span>créer pour vous.</span></h2>
+                </div>
+
+                <div class="row g-4 services-grid">
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card">
+                            <div class="service-card-top">
+                                <div class="service-icon-box"><i class="bi bi-code-square"></i></div>
+                                <span class="service-step-num">01</span>
+                            </div>
+                            <h3 class="service-title">Création de sites Web</h3>
+                            <p class="service-text">Conception de sites web sur-mesure, modernes et optimisés pour vos objectifs et vos clients.</p>
+                            <div class="service-tag-pill">Sur mesure</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card">
+                            <div class="service-card-top">
+                                <div class="service-icon-box"><i class="bi bi-phone"></i></div>
+                                <span class="service-step-num">02</span>
+                            </div>
+                            <h3 class="service-title">Design Responsive</h3>
+                            <p class="service-text">Interfaces parfaitement adaptées aux ordinateurs, tablettes et smartphones pour une expérience irréprochable.</p>
+                            <div class="service-tag-pill">Multi-écrans</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card">
+                            <div class="service-card-top">
+                                <div class="service-icon-box"><i class="bi bi-wordpress"></i></div>
+                                <span class="service-step-num">03</span>
+                            </div>
+                            <h3 class="service-title">WordPress</h3>
+                            <p class="service-text">Création, personnalisation et maintenance de sites WordPress rapides, faciles à administrer et sécurisés.</p>
+                            <div class="service-tag-pill">CMS robuste</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card">
+                            <div class="service-card-top">
+                                <div class="service-icon-box"><i class="bi bi-lightbulb"></i></div>
+                                <span class="service-step-num">04</span>
+                            </div>
+                            <h3 class="service-title">Solutions numériques</h3>
+                            <p class="service-text">Conception d'outils et plateformes digitales concrètes pour automatiser, gérer et développer vos activités.</p>
+                            <div class="service-tag-pill">Performance</div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="section-padding contact-section">
+            <div class="container">
+
+                <div class="contact-card-wrapper">
+                    <div class="row g-5 align-items-stretch">
+
+                        <div class="col-lg-5 contact-info-col">
+                            <div class="contact-info-content">
+
+                                <div class="section-tag">
+                                    <span class="tag-dot"></span>
+                                    <span class="tag-label">Contact</span>
+                                </div>
+
+                                <h2 class="contact-title">Un projet ?<br><span>Parlons-en.</span></h2>
+
+                                <p class="contact-subtitle">Vous avez une idée, un projet web ou une solution numérique à créer ? N'hésitez pas à me contacter, je vous réponds rapidement.</p>
+
+                                <div class="contact-channels">
+
+                                    <a href="mailto:madienggueye3@gmail.com" class="channel-item">
+                                        <div class="channel-icon"><i class="bi bi-envelope"></i></div>
+                                        <div class="channel-text">
+                                            <span class="channel-label">Email</span>
+                                            <span class="channel-value">madienggueye3@gmail.com</span>
+                                        </div>
+                                    </a>
+
+                                    <a href="https://wa.me/221782705824" target="_blank" rel="noopener noreferrer" class="channel-item">
+                                        <div class="channel-icon icon-whatsapp"><i class="bi bi-whatsapp"></i></div>
+                                        <div class="channel-text">
+                                            <span class="channel-label">WhatsApp</span>
+                                            <span class="channel-value">+221 78 270 58 24</span>
+                                        </div>
+                                    </a>
+
+                                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="channel-item">
+                                        <div class="channel-icon"><i class="bi bi-linkedin"></i></div>
+                                        <div class="channel-text">
+                                            <span class="channel-label">LinkedIn</span>
+                                            <span class="channel-value">Madieng GUEYE</span>
+                                        </div>
+                                    </a>
+
+                                    <a href="https://github.com/madienggueye3-ops" target="_blank" rel="noopener noreferrer" class="channel-item">
+                                        <div class="channel-icon"><i class="bi bi-github"></i></div>
+                                        <div class="channel-text">
+                                            <span class="channel-label">GitHub</span>
+                                            <span class="channel-value">madienggueye3-ops</span>
+                                        </div>
+                                    </a>
+
+                                    <div class="channel-item no-hover">
+                                        <div class="channel-icon"><i class="bi bi-geo-alt"></i></div>
+                                        <div class="channel-text">
+                                            <span class="channel-label">Localisation</span>
+                                            <span class="channel-value">Sénégal 🇸🇳</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-7 contact-form-col">
+                            <div class="form-container">
+
+                                <div class="form-header">
+                                    <h3 class="form-title">Envoyez-moi un message</h3>
+                                    <p class="form-desc">Remplissez le formulaire ci-dessous, je vous répondrai dans les meilleurs délais.</p>
+                                </div>
+
+                                <form id="contactForm" class="contact-form" novalidate>
+                                    <div class="row g-4">
+
+                                        <div class="col-md-6">
+                                            <div class="input-field-group">
+                                                <label for="name" class="field-label">Nom complet</label>
+                                                <div class="input-wrapper">
+                                                    <i class="bi bi-person field-icon"></i>
+                                                    <input type="text" id="name" name="name" class="form-control-custom" placeholder="Votre nom complet" required>
+                                                </div>
+                                                <span class="field-error-msg">Veuillez renseigner votre nom.</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="input-field-group">
+                                                <label for="email" class="field-label">Email</label>
+                                                <div class="input-wrapper">
+                                                    <i class="bi bi-envelope field-icon"></i>
+                                                    <input type="email" id="email" name="email" class="form-control-custom" placeholder="votre.email@exemple.com" required>
+                                                </div>
+                                                <span class="field-error-msg">Veuillez renseigner une adresse email valide.</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="input-field-group">
+                                                <label for="subject" class="field-label">Sujet</label>
+                                                <div class="input-wrapper">
+                                                    <i class="bi bi-chat-left-text field-icon"></i>
+                                                    <input type="text" id="subject" name="subject" class="form-control-custom" placeholder="Objet de votre projet ou demande" required>
+                                                </div>
+                                                <span class="field-error-msg">Veuillez préciser le sujet de votre message.</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="input-field-group">
+                                                <label for="message" class="field-label">Message</label>
+                                                <div class="input-wrapper">
+                                                    <i class="bi bi-pencil field-icon textarea-icon"></i>
+                                                    <textarea id="message" name="message" class="form-control-custom form-textarea" rows="5" placeholder="Décrivez votre besoin, projet ou question..." required></textarea>
+                                                </div>
+                                                <span class="field-error-msg">Veuillez rédiger votre message.</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <button type="submit" class="btn-submit-message" id="submitBtn">
+                                                <span>Envoyer le message</span>
+                                                <i class="bi bi-send-fill"></i>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="footer-top-row">
+
+                <div class="footer-brand-col">
+                    <a href="#accueil" class="footer-brand-logo">
+                        <span class="brand-monogram">MG</span>
+                        <span class="brand-name">Madieng GUEYE</span>
+                    </a>
+                    <p class="footer-brand-tagline">Développeur Web & Mobile</p>
+                    <p class="footer-brand-sub">Conception d'expériences numériques élégantes, modernes et sur mesure depuis le Sénégal.</p>
+                    <div class="footer-socials">
+                        <a href="https://github.com/madienggueye3-ops" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="footer-social-icon"><i class="bi bi-github"></i></a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="footer-social-icon"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://wa.me/221782705824" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="footer-social-icon"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4 class="footer-col-title">Navigation</h4>
+                    <ul class="footer-nav-list">
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#apropos">À propos</a></li>
+                        <li><a href="#parcours">Parcours</a></li>
+                        <li><a href="#competences">Compétences</a></li>
+                        <li><a href="#projets">Projets</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact-col">
+                    <h4 class="footer-col-title">Contact direct</h4>
+                    <ul class="footer-contact-list">
+                        <li><i class="bi bi-envelope"></i> <a href="mailto:madienggueye3@gmail.com">madienggueye3@gmail.com</a></li>
+                        <li><i class="bi bi-whatsapp"></i> <a href="https://wa.me/221782705824" target="_blank" rel="noopener noreferrer">+221 78 270 58 24</a></li>
+                        <li><i class="bi bi-geo-alt"></i> <span>Sénégal 🇸🇳</span></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom-row">
+                <p class="footer-copy">&copy; <span id="currentYear">2026</span> Madieng GUEYE. Tous droits réservés.</p>
+                <p class="footer-credits">Conçu avec passion & créativité.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <a href="https://wa.me/221782705824" target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" aria-label="Discuter sur WhatsApp" title="WhatsApp direct">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <button type="button" class="back-to-top-btn" id="backToTop" aria-label="Retourner en haut de page">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

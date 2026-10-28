@@ -1,0 +1,442 @@
+/* ==========================================================================
+   PORTFOLIO - MADIENG GUEYE
+   responsive.css : Adaptations Mobile, Tablette, Laptop & Desktop
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. LAPTOPS & PETITS ÉCRANS (max-width: 1199px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1199.98px) {
+    .section-padding {
+        padding: 85px 0;
+    }
+
+    .hero-name {
+        font-size: 3.4rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .profile-showcase {
+        max-width: 380px;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   2. TABLETTES & ÉCRANS MOYENS (max-width: 991px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 991.98px) {
+    .section-padding {
+        padding: 70px 0;
+    }
+
+    /* Navbar Mobile */
+    .navbar {
+        padding: 14px 0;
+        background: var(--navbar-bg);
+        border-bottom: 1px solid var(--navbar-border);
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+    }
+
+    .navbar-collapse {
+        background: var(--navbar-bg-scrolled);
+        border: 1px solid var(--navbar-border);
+        border-radius: var(--radius-md);
+        padding: 20px;
+        margin-top: 14px;
+        box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
+    }
+
+    .navbar-nav .nav-link {
+        padding: 12px 4px !important;
+        font-size: 1.02rem;
+        color: rgba(255, 255, 255, 0.82) !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .navbar-nav .nav-item:last-child .nav-link {
+        border-bottom: none;
+    }
+
+    .navbar-nav .nav-link.active {
+        color: var(--color-teal) !important;
+        font-weight: 700;
+    }
+
+    .navbar-nav .nav-link.active::after {
+        display: none;
+    }
+
+    .btn-cv {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 20px;
+        margin-top: 15px;
+    }
+
+    .theme-toggle-btn {
+        width: 100%;
+        height: 44px;
+        border-radius: var(--radius-md);
+        margin-top: 8px;
+    }
+
+    /* Hero en une colonne avec photo sous le texte */
+    .hero-section {
+        padding-top: 120px;
+        padding-bottom: 60px;
+        min-height: auto;
+    }
+
+    .hero-row {
+        min-height: auto;
+    }
+
+    .hero-col-text {
+        text-align: left;
+        margin-bottom: 50px;
+    }
+
+    .hero-name {
+        font-size: clamp(2.3rem, 6vw, 3.2rem);
+    }
+
+    .hero-description {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .profile-showcase {
+        max-width: 360px;
+        margin: 20px auto 0;
+    }
+
+    /* Badges flottants adaptés pour tablette */
+    .badge-html {
+        left: -10px;
+        top: 5%;
+    }
+
+    .badge-css {
+        right: -10px;
+        top: 35%;
+    }
+
+    .badge-js {
+        left: -10px;
+        bottom: 20%;
+    }
+
+    .badge-php {
+        right: -10px;
+        bottom: 5%;
+    }
+
+    /* À Propos */
+    .about-card-banner {
+        margin-bottom: 30px;
+        padding: 36px 28px;
+    }
+
+    /* Compétences en 2 colonnes */
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /* Projets */
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+    }
+
+    /* Contact */
+    .contact-card-wrapper {
+        padding: 40px 30px;
+    }
+
+    .contact-info-col {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    /* Footer */
+    .footer-top-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .footer-brand-col {
+        grid-column: span 2;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   3. SMARTPHONES - FORMAT MOBILE (max-width: 767px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 767.98px) {
+    .section-padding {
+        padding: 60px 0;
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+    }
+
+    .section-title {
+        font-size: 1.85rem;
+    }
+
+    /* Hero */
+    .status-badge {
+        padding: 5px 12px;
+        font-size: 0.78rem;
+    }
+
+    .hero-greeting {
+        font-size: 1rem;
+    }
+
+    .hero-name {
+        font-size: 2.25rem;
+    }
+
+    .hero-role {
+        font-size: 1.15rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    /* Boutons pleine largeur ou empilés sur mobile */
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .btn-primary-custom,
+    .btn-outline-custom {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        padding: 13px 20px;
+    }
+
+    .hero-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    /* Photo hero mobile */
+    .profile-showcase {
+        max-width: 300px;
+    }
+
+    .profile-card {
+        padding: 8px;
+    }
+
+    /* Badges flottants simplifiés sur petit écran */
+    .floating-badge {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+    }
+
+    .floating-badge i {
+        font-size: 0.95rem;
+    }
+
+    .badge-html {
+        left: -15px;
+        top: 2%;
+    }
+
+    .badge-css {
+        right: -15px;
+        top: 30%;
+    }
+
+    .badge-js {
+        left: -15px;
+        bottom: 18%;
+    }
+
+    .badge-php {
+        right: -15px;
+        bottom: 2%;
+    }
+
+    /* Stats */
+    .stats-container {
+        padding: 24px 16px;
+    }
+
+    .stat-num {
+        font-size: 1.7rem;
+    }
+
+    .stat-desc {
+        font-size: 0.78rem;
+    }
+
+    /* Piliers À Propos en une colonne */
+    .about-pillars {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    /* Timeline adaptée mobile */
+    .timeline-wrapper {
+        padding-left: 36px;
+    }
+
+    .timeline-wrapper::before {
+        left: 14px;
+    }
+
+    .timeline-bullet {
+        left: -36px;
+        width: 32px;
+        height: 32px;
+        font-size: 0.85rem;
+    }
+
+    .timeline-card {
+        padding: 20px 18px;
+    }
+
+    .timeline-title {
+        font-size: 1.1rem;
+    }
+
+    /* Compétences en une colonne */
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .skill-card {
+        padding: 24px 20px;
+    }
+
+    /* Filtres et Projets en une colonne */
+    .project-filter-tabs {
+        width: 100%;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding: 4px;
+    }
+
+    .filter-tab {
+        padding: 6px 14px;
+        font-size: 0.8rem;
+        white-space: nowrap;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .project-info {
+        padding: 20px 18px;
+    }
+
+    .project-title {
+        font-size: 1.15rem;
+    }
+
+    /* Services en une colonne */
+    .service-card-premium {
+        padding: 28px 22px;
+    }
+
+    /* Contact en une colonne */
+    .contact-card-wrapper {
+        padding: 30px 20px;
+    }
+
+    .form-container {
+        padding: 24px 18px;
+    }
+
+    .contact-title {
+        font-size: 2rem;
+    }
+
+    /* Footer Mobile */
+    .footer-top-row {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-brand-col {
+        grid-column: span 1;
+    }
+
+    .footer-bottom-row {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    /* Boutons flottants adaptés */
+    .floating-whatsapp-btn {
+        bottom: 20px;
+        left: 20px;
+        width: 48px;
+        height: 48px;
+        font-size: 1.4rem;
+    }
+
+    .back-to-top-btn {
+        bottom: 20px;
+        right: 20px;
+        width: 44px;
+        height: 44px;
+        font-size: 1rem;
+    }
+
+    .custom-toast {
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   4. TRÈS PETITS ÉCRANS (< 380px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 379.98px) {
+    .brand-name {
+        font-size: 0.95rem;
+    }
+
+    .hero-name {
+        font-size: 1.95rem;
+    }
+
+    .hero-role {
+        font-size: 1.05rem;
+    }
+
+    .profile-showcase {
+        max-width: 260px;
+    }
+
+    .floating-badge {
+        display: none; /* Masqués sur écran ultra étroit pour une clarté totale */
+    }
+}
